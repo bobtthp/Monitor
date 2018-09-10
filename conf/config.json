@@ -1,0 +1,15 @@
+{
+  "pname": ["test"],
+
+  "rabbitmq" : {
+    "username": "bob",
+    "pwd" : "bob.1234",
+    "host": "192.168.122.6"
+  },
+  "redis" : {
+    "host" : "192.168.122.3",
+    "port" : 6379,
+    "decode_responses" : "True"
+   }
+   
+}
