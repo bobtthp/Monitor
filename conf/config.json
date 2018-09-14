@@ -1,7 +1,7 @@
 {
-  "pname": ["test"],
+  "pname": ["test","bob"],
 
-  "rabbitmq" : {
+  "rabbitmq1" : {
     "username": "bob",
     "pwd" : "bob.1234",
     "host": "192.168.122.6"
@@ -10,6 +10,11 @@
     "host" : "192.168.122.3",
     "port" : 6379,
     "decode_responses" : "True"
-   }
+   },
+   "rabbitmq" : {
+    "username": "jues",
+    "pwd" : "jues",
+    "host": "192.168.1.41"
+  }
    
 }

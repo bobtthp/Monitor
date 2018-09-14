@@ -18,7 +18,10 @@ def get_log_conf(pname):
         #print pname
         pconf = ConfigParser.ConfigParser()
         ppath = root_path + '/conf/' + pname + '.conf'
-        pconf.read(ppath)
+        if os.access(ppath,os.F_OK):
+            pconf.read(ppath)
+        else:
+            print ('please check file' + ppath)
         return pconf
     else:
         print ('please check if '  + pname  + ' config.json !')
