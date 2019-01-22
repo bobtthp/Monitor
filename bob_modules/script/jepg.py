@@ -5,7 +5,7 @@
 import os
 import requests
 
-codeurl = 'http://kq2.qk365.com/login/code'
+codeurl = 'http://xxx/login/code'
 valcode = requests.get(codeurl)
 img = '/Users/bob/Desktop/bobtthp/static/code.png'
 
@@ -21,8 +21,8 @@ def getcode(img):
 
 
 data = {
-    # "username": "gaozequn",
-    # "password": "Gzq123321",
+    # "username": "xx",
+    # "password": "xxx",
     # "validateCode" : "qwqe"
 }
 header_base = {
@@ -45,12 +45,12 @@ header_base = {
 #        im.write(valcode.content)
 #    getcode(img)
 #    requests.post()
-data['username'] = 'gaozequn'
-data['password'] = 'Gzq123321'
+data['username'] = 'xxx'
+data['password'] = 'xxx'
 data['validateCode'] = 'nrts'
-r = requests.get('http://kq2.qk365.com/login')
+r = requests.get('http://xxx/login')
 
-r1 = requests.get('http://kq2.qk365.com/login/code', cookies=r.cookies)
-context = requests.post('http://kq2.qk365.com/login', data=data, headers=header_base, cookies=r.cookies)
+r1 = requests.get('http://xxx/login/code', cookies=r.cookies)
+context = requests.post('http://xxx/login', data=data, headers=header_base, cookies=r.cookies)
 
 print (context.text)
