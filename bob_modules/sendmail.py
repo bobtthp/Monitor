@@ -40,7 +40,7 @@ def sendmail(kwargs):
 info = {
     'subject':'主题',
     'text':'文本',
-    'to_addr':'gaozequn@qk365.com',
+    'to_addr':'',
     'to_name':'bob'
         }
 sendmail(info)
