@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 from email.utils import parseaddr, formataddr
 import smtplib
 
-from_addr = 'gaozequn@qk365.com'
-password = 'Gzq123321'
+from_addr = ''
+password = ''
 mail = {'qqmail':{'host':'smtp.exmail.qq.com','port':465},
         'hotmail':{'host':'smtp.live.com','port':465},
         'gmail':{'host':'smtp.gmail.com','port':465}
